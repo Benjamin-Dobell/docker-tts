@@ -1,0 +1,5 @@
+FROM tts
+
+COPY debug-patches /home/steam/patches
+
+RUN /home/steam/apply_patches.sh
