@@ -15,8 +15,7 @@ else
 	fi
 
 	"$BASE_DIR/update_tts.sh" $VALIDATE
+	"$BASE_DIR/apply_patches.sh"
 fi
-
-"$BASE_DIR/apply_patches.sh"
 
 "./tts/Tabletop Simulator.x86_64" -batchmode -nographics "$@"

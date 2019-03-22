@@ -27,7 +27,7 @@ If this occurs, simply execute the command a second time with a new Steam Guard 
 Simply execute:
 
 ```bash
-docker run tts
+docker run -it tts
 ```
 
 ## Command line arguments
