@@ -38,6 +38,8 @@ COPY apply_patches.sh .
 COPY patches /home/steam/patches
 RUN ./apply_patches.sh
 
+ENV LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/steam/steamcmd/linux64
+
 COPY tts.sh .
 
 ARG STEAM_REAUTH_DATE
